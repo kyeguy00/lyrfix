@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    background-image: url(/images/guitar.jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color:rgb(0, 8, 20);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+header .h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 80px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchContainer {
+    position: relative;
+}
+
+.result, .container > h1 {
+    color: black;
+    text-align: center;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+#search {
+    padding: 5px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    margin: 0px, 10px, 0px, 10px;
+    background-image: linear-gradient( rgba(0, 53, 102, 0.349), white);
+    border: none;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.45);
+}
+
+.searchButton {
+    background-color: rgb(255, 195, 0);
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+
+.searchButton:hover {
+  background-color: rgb(226, 173, 0);
+  
+}
+ .song-list li {
+     list-style: none;
+     margin-bottom: 15px; 
+ }
+
+
+ .result {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ input {
+     height: 45px;
+     padding: 15px, 30px;
+     border-radius: 50px;
+ }
+
+.releaseDate {
+    margin: 5px;
+    background-color: rgba(240, 248, 255, 0.726);
+    color: black;
+    padding: 3px;
+    position: absolute;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.45);
+    bottom: 30px;
+    border-radius: 30px;
+}
+
+.getLyrics {
+    cursor: pointer;
+    background-color: rgb(255, 195, 0);
+    color: black;
+    border-radius: 30px;
+    padding: 3px;
+    transition: background-color 300ms;
+}
+
+.getLyrics:hover {
+    background-color: rgb(226, 173, 0);
+}
+
+.song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.songImage {
+    max-height: 500px;
+    max-width: 350px;
+    margin: 5px;
+    position: relative;
+    opacity: 70%;
+    border-radius: 10px;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.45);
+}
+
+
+.songTitle {
+    font-size: 1.5rem;
+    margin: 5px;
+    position: absolute;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    max-width: 340px;
+    max-height: 490px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.song-list {
+    margin: 5px;
+    padding: 0;
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+body {
+    background-size: auto;
+};
+
+#search {
+    width: 350px;
+}
+
+
+.songImage {
+    max-height: 500px;
+    max-width: 350px;
+}
+
+
+.songTitle {
+    max-width: 340px;
+    max-height: 490px;
+}
+
+}
+
+@media only screen and (max-width: 920px) {
+
+    body {
+        background-size: auto;
+    };
+
+}
