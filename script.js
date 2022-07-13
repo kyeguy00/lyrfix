@@ -1,10 +1,7 @@
-import { searchSong } from "./search"
+import { searchSong } from "./input"
 
 const form = document.getElementById('form')
 const search = document.getElementById('search')
-const lyrics = document.getElementById('lyrics')
-const result = document.getElementById('result')
-const resultsHeader = document.getElementById('resultsHeader')
 
 
 
