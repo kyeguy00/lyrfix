@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url(/images/guitar.jpg);
+    background-image: url(./guitar.jpg);
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
 }
