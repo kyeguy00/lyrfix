@@ -1,4 +1,4 @@
-import { showData } from "./data"
+import { showData } from "./data.js"
 
 const apiURL = 'https://genius.p.rapidapi.com'
 
