@@ -1,4 +1,4 @@
-import { searchSong } from "./input"
+import { searchSong } from "./input.js"
 
 const form = document.getElementById('form')
 const search = document.getElementById('search')
